@@ -1,314 +1,397 @@
 [
   {
     "name": "Abyssal Sadist",
-    "description": "The first time you wound the monster each attack, gain +1 survival and +1 insanity. Ignore the effects of the Fear of the Dark and Prey disorders."
+    "description": "The first time you wound the monster each attack, gain +1 survival and +1 insanity. Ignore the effects of the Fear of the Dark and Prey disorders.",
+    "expansion": "Core"
   },
   {
     "name": "Acanthus Doctor",
-    "description": "You may wear up to 3 Satchel gear cards. When you depart, if you are not wearing any armor, for each green affinity you have, gain +1 strength token and add 1 to all hit locations. Spend an action and a Flower or Fresh Acanthus resource to heal a permanent injury you or an adjacent survivor suffered this showdown."
+    "description": "You may wear up to 3 Satchel gear cards. When you depart, if you are not wearing any armor, for each green affinity you have, gain +1 strength token and add 1 to all hit locations. Spend an action and a Flower or Fresh Acanthus resource to heal a permanent injury you or an adjacent survivor suffered this showdown.",
+    "expansion": "Flower Knight"
+  },
+  {
+    "name": "Acrobatics",
+    "description": "When you are adjacent to the monster, you may spend [M] to place your survivor on any other space adjacent to the monster.",
+    "expansion": "Dragon King"
   },
   {
     "name": "Ageless Apprentice",
-    "description": "When you gain Hunt XP, you may decide not to gain it. When you depart, you may rotate up to 3 gear cards in your gear grid. This changes the location of their affinities and arrows. Otherwise, the gear functions normally."
+    "description": "When you gain Hunt XP, you may decide not to gain it. When you depart, you may rotate up to 3 gear cards in your gear grid. This changes the location of their affinities and arrows. Otherwise, the gear functions normally.",
+    "expansion": "Lion Knight"
   },
   {
     "name": "Altered Destiny",
-    "description": "If you would gain a negative attribute token, gain a positive token of that type instead."
+    "description": "If you would gain a negative attribute token, gain a positive token of that type instead.",
+    "expansion": "Dragon King"
   },
   {
     "name": "Ambidextrous",
-    "description": "All melee weapons in your gear grid gain paired. Ambidextrous cannot be used if there are any shields, two-handed, or heavy gear in your gear grid."
+    "description": "All melee weapons in your gear grid gain paired. Ambidextrous cannot be used if there are any shields, two-handed, or heavy gear in your gear grid.",
+    "expansion": "Core"
   },
   {
-    "name": "Bard",
-    "description": "Add Bard as a \"Weapon Proficiency.\" Each showdown played gains 1 point in it. Add this number to rolls with any instrument. At Bardic Mastery (8+ points), each time a bard plays they also have a 50% chance of removing a Trait card, in addition to other instrument effects."
+    "name": "Beast of Caratosis",
+    "description": "You may [Concentrate]. If you do, perform [Beast of Caratosis] at the start of your next act.\n[Beast of Caratosis]: You reach into the dream and disappear in a shimmer of heat.\nPlace your survivor adjacent to the monster. Activate a weapon in your gear grid and attack the monster. For this attack, your attack speed is equal to your red affinities, you hit automatically, and you gain strength equal to double your red affinities. Then, gain +6 Hunt XP.",
+    "expansion": "Core"
   },
   {
     "name": "Beetle Strength",
-    "description": "Once per showdown, you may spend an action to shove an adjacent obstacle terrain. If you do, move the terrain ahead of you until you finish moving. If you pass over a monster, it takes 1 wound. Survivors are pushed out of the way to the side. You are knocked down at the end of your move."
+    "description": "Once per showdown, you may spend an action to shove an adjacent obstacle terrain. If you do, move the terrain ahead of you until you finish moving. If you pass over a monster, it takes 1 wound. Survivors are pushed out of the way to the side. You are knocked down at the end of your move.",
+    "expansion": "Dung Beetle Knight"
   },
   {
     "name": "Berserker",
-    "description": "Once per showdown, you may spend an action to suffer bash and the frenzy brain trauma."
+    "description": "Once per showdown, you may spend an action to suffer bash and the frenzy brain trauma.",
+    "expansion": "Core"
+  },
+  {
+    "name": "Black Guard Style",
+    "description": "Swords in your gear grid gain [Block 1].\nWhen you block a hit with a sword, you next attack that round with a sword gains + 2 accuracy, + 2 strength, + 2 speed. Limit, once per round.\nDuring the settlement phase, you may spend [star] to train a survivor. They gain the Black Guard Style secret fighting art. You lose it if you suffer the broken arm severe injury.",
+    "expansion": "Promo"
   },
   {
     "name": "Blotted Out",
-    "description": "When you suffer a brain trauma, instead gain a bleeding token."
+    "description": "When you suffer a brain trauma, instead gain a bleeding token.",
+    "expansion": "Slenderman"
+  },
+  {
+    "name": "Bone Whisperer",
+    "description": "When another survivor dies on the showdown board, place a token where they died. If you pass over it, remove the token and eat their skull. [Heal] your survivor and roll 1d10 + your hunt XP:\n1 – 3: You feel amazing. Gain + 1 permanent movement, speed and evasion.\n4 – 8: Gain + 1 permanent strength.\n9 – 18: Gain a fighting art and + 5 survival.\n19+ You run away into exile.\nAt the end of the showdown, you are gone forever.",
+    "expansion": "Core"
   },
   {
     "name": "Burning Ambition",
-    "description": "When you are instructed to skip the next hunt event, ignore it. The \"skip next hunt event\" box on your survivor sheet cannot be filled in."
+    "description": "When you are instructed to skip the next hunt event, ignore it. The \"skip next hunt event\" box on your survivor sheet cannot be filled in.",
+    "expansion": "Sunstalker"
   },
   {
     "name": "Burning Focus",
-    "description": "If you have 0 survival at the start of your act, gain 1 survival."
-  },
-  {
-    "name": "Call Shadow Tentacles",
-    "description": "Once per showdown, you may call forth shadowy tentacles to hold the monster in place. From now until your next action, the monster is held in place. Ignore all monster movement on attacks, reactions, traps, and survivor attacks until your next act."
+    "description": "If you have 0 survival at the start of your act, gain 1 survival.",
+    "expansion": "Lion God"
   },
   {
     "name": "Carapace of Will",
-    "description": "At the start of the showdown, gain the Steadfast survivor status card. When you are attacked, if you have 2+ steadfast tokens, ignore a hit and remove all your steadfast tokens."
+    "description": "At the start of the showdown, gain the Steadfast survivor status card. When you are attacked, if you have 2+ steadfast tokens, ignore a hit and remove all your steadfast tokens.",
+    "expansion": "Dung Beetle Knight"
+  },
+  {
+    "name": "Champion's Rite",
+    "description": "Before making an attack, you may add your understanding to your accuracy attribute for that attack. Limit, once per showdown.",
+    "expansion": "Dragon King"
   },
   {
     "name": "Clarity of Darkness",
-    "description": "At the start of the showdown, gain the Path of Gloom survivor status card. There is a deadly, otherworldly presence about you. Other survivors cannot voluntarily end their movement adjacent to you."
+    "description": "At the start of the showdown, gain the Path of Gloom survivor status card. There is a deadly, otherworldly presence about you. Other survivors cannot voluntarily end their movement adjacent to you.",
+    "expansion": "Slenderman"
   },
   {
     "name": "Clutch Fighter",
-    "description": "While you have 3 or more blood tokens, gain +1 strength and +1 accuracy."
+    "description": "While you have 3 or more blood tokens, gain +1 strength and +1 accuracy.",
+    "expansion": "Core"
   },
   {
     "name": "Combo Master",
-    "description": "On a perfect hit, make 1 additional attack roll."
+    "description": "On a perfect hit, make 1 additional attack roll.",
+    "expansion": "Core"
   },
   {
     "name": "Courtly Screenwriter",
-    "description": "At the start of the showdown, secretly write down on a scrap of paper which survivors will live and who will deal the killing blow. During the aftermath, if your predictions were correct, raise the settlement's Survival Limit by 1."
+    "description": "At the start of the showdown, secretly write down on a scrap of paper which survivors will live and who will deal the killing blow. During the aftermath, if your predictions were correct, raise the settlement's Survival Limit by 1.",
+    "expansion": "Lion Knight"
   },
   {
     "name": "Crazed",
-    "description": "On a Perfect hit, gain +1 insanity."
+    "description": "On a Perfect hit, gain +1 insanity.",
+    "expansion": "Core"
   },
   {
     "name": "Crossarm Block",
-    "description": "Whenever you are hit, after hit locations are rolled, you may change 1 result to the arms hit location."
+    "description": "Whenever you are hit, after hit locations are rolled, you may change 1 result to the arms hit location.",
+    "expansion": "Core"
   },
   {
     "name": "Death Touch",
-    "description": "Gain +1 accuracy when attacking with Fist & Tooth. When you wound a monster, it gains -1 toughness until the end of your attack. You cannot use this if you are male."
+    "description": "Gain +1 accuracy when attacking with Fist & Tooth. When you wound a monster, it gains -1 toughness until the end of your attack. You cannot use this if you are male.",
+    "expansion": "Spidicules"
   },
   {
     "name": "Defender",
-    "description": "When a survivor adjacent to you is knocked down, you may spend 1 survival. If you do, they stand again and gain +1 survival from your words of encouragement. You cannot use this if you have a broken jaw."
+    "description": "When a survivor adjacent to you is knocked down, you may spend 1 survival. If you do, they stand again and gain +1 survival from your words of encouragement. You cannot use this if you have a broken jaw.",
+    "expansion": "Sunstalker"
   },
   {
     "name": "Double Dash",
-    "description": "During your act, once per round, you may spend an action to gain an additional move."
+    "description": "During your act, once per round, you may spend an action to gain an additional move.",
+    "expansion": "Core"
   },
   {
     "name": "Eternal Will",
-    "description": "Gain +1 accuracy and +1 strength for each permanent injury you have. You may always depart, even when retired."
+    "description": "Gain +1 accuracy and +1 strength for each permanent injury you have. You may always depart, even when retired.",
+    "expansion": "Manhunter"
   },
   {
     "name": "Extra Sense",
-    "description": "You may dodge 1 additional time per round."
+    "description": "You may dodge 1 additional time per round.",
+    "expansion": "Core"
+  },
+  {
+    "name": "Fated Blow",
+    "description": "Once per showdown, you may give your next wound attempt + 2 strength and [Devastating 1].",
+    "expansion": "Dragon King"
   },
   {
     "name": "Fencing",
-    "description": "Ignore Parry when attempting to wound hit locations. (Attempt to wound these locations normally.) When a monster attacks you, roll 1d10. On a 6+, ignore 1 hit. Limit once per round."
-  },
-  {
-    "name": "Final Fighting Art",
-    "description": "Once per showdown, you may select a card from the discard pile or wound stack and place it on top of the AI deck. Settlement receives +1 survival limit if this fighting art was not previously known."
+    "description": "Ignore Parry when attempting to wound hit locations. (Attempt to wound these locations normally.) When a monster attacks you, roll 1d10. On a 6+, ignore 1 hit. Limit once per round.",
+    "expansion": "Flower Knight"
   },
   {
     "name": "Frozen Star",
-    "description": "Once per round, you may spend 1 survival to freeze a monster's brain. They gain -2 accuracy until the end of the round. Once per round, you may spend 1 survival to freeze a survivor's brain, killing them instantly. They die."
+    "description": "Once per round, you may spend 1 survival to freeze a monster's brain. They gain -2 accuracy until the end of the round. Once per round, you may spend 1 survival to freeze a survivor's brain, killing them instantly. They die.",
+    "expansion": "Dragon King"
   },
   {
-    "name": "Hardened",
-    "description": "-(Understanding/3 round up) Insanity every time insanity should be gained. -(Understanding/3 round up) Brain Damage every time Brain Damage should be taken. Eliminates all disorders, cannot gain disorders."
+    "name": "Grace of Dormenatus",
+    "description": "You may [Concentrate]. If you do, perform [Grace of Dormenatus] at the start of your next act.\n[Grace of Dormenatus]: You reach into the dream and remove a twisting green crown. The crown explodes. A glittering rain of shards coats the survivors.\nAll survivors gain armor at all hit locations equal to your green affinities. The may remove up to the same number of tokens. Then gain +6 Hunt XP. If you still exist, gain the priority target token.",
+    "expansion": "Core"
   },
   {
     "name": "Harvestman",
-    "description": "Gain +3 movement. Whenever you are knocked down, gain -1 movement token. If you have the Tiny Arachnophobia disorder, you are too scared of spiders to imitate them and you cannot use this fighting art."
+    "description": "Gain +3 movement. Whenever you are knocked down, gain -1 movement token. If you have the Tiny Arachnophobia disorder, you are too scared of spiders to imitate them and you cannot use this fighting art.",
+    "expansion": "Spidicules"
   },
   {
     "name": "Headliner",
-    "description": "When you become doomed or gain the priority target token, you may choose to gain +1 survival or +1 strength token."
+    "description": "When you become doomed or gain the priority target token, you may choose to gain +1 survival or +1 strength token.",
+    "expansion": "Lion Knight"
   },
   {
     "name": "Hellfire",
-    "description": "You cannot lose or remove this fighting art. Gain +1 strength for each full red affinity you have. You cannot be nominated for Intimacy. You ignore Extreme Heat. At the start of your act, lose 1 survival."
+    "description": "You cannot lose or remove this fighting art. Gain +1 strength for each full red affinity you have. You cannot be nominated for Intimacy. You ignore Extreme Heat. At the start of your act, lose 1 survival.",
+    "expansion": "Sunstalker"
   },
   {
     "name": "Heroic",
-    "description": "If you are standing adjacent to the monster and have 3+ survival, you may spend 3 survival for one automatic hit that inflicts a critical wound."
+    "description": "If you are standing adjacent to the monster and have 3+ survival, you may spend 3 survival for one automatic hit that inflicts a critical wound.",
+    "expansion": "Lion God"
   },
   {
     "name": "Immovable Object",
-    "description": "You stand firm in the face of any force. You may not be knocked down and may ignore knockback."
-  },
-  {
-    "name": "Impatient Fighter",
-    "description": "You have the first action in every showdown (including going ahead of the monster)."
-  },
-  {
-    "name": "Iron Skin",
-    "description": "Your skin becomes hard as metal. Gain 1 armor on all body locations. It self-repairs after each showdown."
+    "description": "You stand firm in the face of any force. You may not be knocked down and may ignore knockback.",
+    "expansion": "Gorm"
   },
   {
     "name": "King of a Thousand Battles",
-    "description": "Gain +2 accuracy, +2 strength, +2 evasion. You may dodge any number of times in a round."
+    "description": "Gain +2 accuracy, +2 strength, +2 evasion. You may dodge any number of times in a round.",
+    "expansion": "Core"
   },
   {
     "name": "King's Step",
-    "description": "Whenever you attack. You may discard any number of Battle Pressure hit locations drawn and draw an equal number of new hit locations. Whenever you attack, after drawing hit locations, but before rolling to wound, you may choose one hit location drawn and discard it to draw a new hit location. Traps will cancel these effects."
+    "description": "Whenever you attack. You may discard any number of Battle Pressure hit locations drawn and draw an equal number of new hit locations. Whenever you attack, after drawing hit locations, but before rolling to wound, you may choose one hit location drawn and discard it to draw a new hit location. Traps will cancel these effects.",
+    "expansion": "Core"
   },
   {
     "name": "Last Man Standing",
-    "description": "While you are the only survivor on the showdown board. You may not gain bleeding tokens or be knocked down."
+    "description": "While you are the only survivor on the showdown board. You may not gain bleeding tokens or be knocked down.",
+    "expansion": "Core"
   },
   {
     "name": "Leader",
-    "description": "Whenever you encourage a survivor, they gain +1 speed token until the end of the round."
+    "description": "Whenever you encourage a survivor, they gain +1 speed token until the end of the round.",
+    "expansion": "Core"
   },
   {
     "name": "Legendary Lungs",
-    "description": "Once per attack, for each successful hit make an additional attack roll."
+    "description": "Once per attack, for each successful hit make an additional attack roll.",
+    "expansion": "Core"
+  },
+  {
+    "name": "Lucernae's Lantern",
+    "description": "You may [Concentrate]. If you do, perform [Lucernae’s Lantern] at the start of your next act.\n[Lucernae’s Lantern]: You reach into the dream and excise a screeching skull, darker than darkness. It hurtles at the monster.\nReveal hit locations equal to half of your blue affinities (rounded down) one at a time. The monster suffers a critical wound at any locations with critical wound effects. (Ignore the effects of a trap.) Then reshuffle the hit location deck. Gain + 6 Hunt XP.",
+    "expansion": "Core"
   },
   {
     "name": "Lure Epilepsy",
-    "description": "Once per showdown, you may spend an action to give yourself a seizure. You suffer a random brain trauma and are knocked down."
+    "description": "Once per showdown, you may spend an action to give yourself a seizure. You suffer a random brain trauma and are knocked down.",
+    "expansion": "Gorm"
   },
   {
     "name": "Mammoth Hunting",
-    "description": "Gain +1 strength when attacking from adjacent spaces outside the monster's facing and blind spot."
+    "description": "Gain +1 strength when attacking from adjacent spaces outside the monster's facing and blind spot.",
+    "expansion": "Gorm"
   },
   {
     "name": "Mighty Strike",
-    "description": "On a Perfect Hit, gain +2 strength until the end of the attack."
+    "description": "On a Perfect Hit, gain +2 strength until the end of the attack.",
+    "expansion": "Core"
   },
   {
     "name": "Monster Claw Style",
-    "description": "Your Fist & Tooth attacks gain +1 accuracy, +1 strength and savage."
+    "description": "Your Fist & Tooth attacks gain +1 accuracy, +1 strength and savage.",
+    "expansion": "Core"
   },
   {
-    "name": "Multitasker",
-    "description": "Gain one action per round. This action must not be a weapon attack or movement. It allows the use of gear or combat actions that are not weapon attacks."
-  },
-  {
-    "name": "Necromancer",
-    "description": "When you depart, gain +1 armor to all hit locations for each gear card in your grid with the \"symbol\" keyword. If you would roll on the severe injury table, roll on the Worm Trauma table on the other side of the Necromancer card instead (from Lion God cards)."
+    "name": "Necromancer/Worm Trauma",
+    "description": "When you depart, gain [1 Armor] to all hit locations for each gear card in your grid with the symbol keyword.\nIf you would roll on the severe injury table, roll on the [Worm Trauma] table on the other side of this card instead.\nWhen you die or forget this, the settlement gains the [Knowledge Worm] innovation.\n\n[Worm Trauma]\nWhenever you would suffer an unspecified severe injury, roll 1d10 on the following table instead of on the severe injury table.\n(Specified severe injuries remain unchanged.)\n\n[1-3]: A spray of blood and silver. Dead.\n[4-5]: The worm's coil tightens sharply. Gain 2 bleeding tokens and -1 evasion token.\n[6-7]: A dizzying blow. Gain 1 bleeding token and 1d5 insanity.\n[8]: An inhuman voice screams in your bones. Gain 1 bleeding token and 1d5 insanity.\n[9]: The pain is infuriating! Gain 1 bleeding token and + 1 strength token.\n[10]: Molten metal issues from your mouth. You are knocked down and gain 1 iron strange resource.",
+    "expansion": "Lion God"
   },
   {
     "name": "Orator of Death",
-    "description": "Once per showdown, you may spend an action to have all non-deaf survivors gain +2 insanity. When you die, you encourage all survivors with your last words."
+    "description": "Once per showdown, you may spend an action to have all non-deaf survivors gain +2 insanity. When you die, you encourage all survivors with your last words.",
+    "expansion": "Core"
   },
   {
     "name": "Otherworldly Luck",
-    "description": "During the Hunt and Settlement phases, whenever you roll on a table, you may add +1 to the roll result. Does not include rolls may during a nemesis showdown (or any showdown)."
+    "description": "During the Hunt and Settlement phases, whenever you roll on a table, you may add +1 to the roll result. Does not include rolls may during a nemesis showdown (or any showdown).",
+    "expansion": "Flower Knight"
   },
   {
     "name": "Phantom Friend",
-    "description": "The first time you gain a resource during a showdown, you may feed it to your phantom friend. If you do, archive the resource and gain +1 evasion token. Lose this token if you are deaf or become deaf."
+    "description": "The first time you gain a resource during a showdown, you may feed it to your phantom friend. If you do, archive the resource and gain +1 evasion token. Lose this token if you are deaf or become deaf.",
+    "expansion": "Slenderman"
   },
   {
     "name": "Propulsion Drive",
-    "description": "At the start of a showdown, gain the Momentum survivor status card. When you attack, if you have 5+ momentum tokens, remove them all and roll 1d10. Gain that amount of luck and strength when attempting to wound the first selected hit location for this attack."
+    "description": "At the start of a showdown, gain the Momentum survivor status card. When you attack, if you have 5+ momentum tokens, remove them all and roll 1d10. Gain that amount of luck and strength when attempting to wound the first selected hit location for this attack.",
+    "expansion": "Dung Beetle Knight"
   },
   {
     "name": "Purpose",
-    "description": "Your comrades make you strong enough to exceed the limits of death itself. During the showdown, if you would gain a lethal number of bleeding tokens while there are any other standing survivors, roll 1d10. On a 6+, you live but are knocked down. You will not bleed to death until you gain another bleeding token."
+    "description": "Your comrades make you strong enough to exceed the limits of death itself. During the showdown, if you would gain a lethal number of bleeding tokens while there are any other standing survivors, roll 1d10. On a 6+, you live but are knocked down. You will not bleed to death until you gain another bleeding token.",
+    "expansion": "Sunstalker"
   },
   {
     "name": "Red Fist",
-    "description": "At the start of each showdown, each survivor gains +1 strength token. Survivors may spend +1 strength tokens in place of survival."
+    "description": "At the start of each showdown, each survivor gains +1 strength token. Survivors may spend +1 strength tokens in place of survival.",
+    "expansion": "Core"
   },
   {
     "name": "Rhythm Chaser",
-    "description": "Gain +1 evasion token the first time you critically wound during a showdown. Rhythm Chaser cannot be used if there are any shields or heavy gear in your grid."
+    "description": "Gain +1 evasion token the first time you critically wound during a showdown. Rhythm Chaser cannot be used if there are any shields or heavy gear in your grid.",
+    "expansion": "Core"
   },
   {
     "name": "Ruthless",
-    "description": "Whenever a survivor dies during the showdown, roll 1d10. On a 7+ you gain a skull basic resource."
+    "description": "Whenever a survivor dies during the showdown, roll 1d10. On a 7+ you gain a skull basic resource.",
+    "expansion": "Lion God"
+  },
+  {
+    "name": "Scholar of Death",
+    "description": "On [arrival], gain reroll tokens equal to the number of volumes recorded about your quarry. (e.g., if your settlement has White Lion Voulmes 1, 2, and 2 when you fight a White Lion, gain 3 reroll tokens.)\nDiscard a reroll token to reroll one of your roll results during the showdown. This includes monster roll results when you are the monster controller.",
+    "expansion": "Core"
   },
   {
     "name": "Seasoned Hunter",
-    "description": "Whenever a random hunt event roll matches (a 1d10 roll) matches the number of the hunt event card square, the event revealer gains +1 understanding and +1 courage."
+    "description": "Whenever a random hunt event roll matches (a 1d10 roll) matches the number of the hunt event card square, the event revealer gains +1 understanding and +1 courage.",
+    "expansion": "Manhunter"
   },
   {
     "name": "Silk Surgeon",
-    "description": "Gain 1 rank, or 0 if this is the first time gaining it. Rank 0: (no bonuses). Rank 1: You may spend an action while adjacent to another survivor to add 2 armor to one of their hit locations. Rank 2: While all of the armor in your grid is silk and all jewelry is amber, gain +2 evasion. Rank 3: During the aftermath, roll 1d10 for each other survivor that died during the showdown. On a 7+, you revive them."
+    "description": "Gain 1 rank, or 0 if this is the first time gaining it. Rank 0: (no bonuses). Rank 1: You may spend an action while adjacent to another survivor to add 2 armor to one of their hit locations. Rank 2: While all of the armor in your grid is silk and all jewelry is amber, gain +2 evasion. Rank 3: During the aftermath, roll 1d10 for each other survivor that died during the showdown. On a 7+, you revive them.",
+    "expansion": "Spidicules"
   },
   {
     "name": "Sneak Attack",
-    "description": "When you attack a monster from its blind spot, you gain +4 strength for that attack."
+    "description": "When you attack a monster from its blind spot, you gain +4 strength for that attack.",
+    "expansion": "Sunstalker"
   },
   {
     "name": "Strategist",
-    "description": "During the showdown setup, after placing terrain, you may add a Giant Stone Face or a Toppled Pillar terrain card to the showdown board."
+    "description": "During the showdown setup, after placing terrain, you may add a Giant Stone Face or a Toppled Pillar terrain card to the showdown board.",
+    "expansion": "Core"
   },
   {
     "name": "Sun Eater",
-    "description": "Your body mysteriously absorbs light. At the start of each showdown, gain survival up to the settlement's Survival Limit. If you have any +1 Strength tokens, you may spend them all to perform the Surge survival action."
+    "description": "Your body mysteriously absorbs light. At the start of each showdown, gain survival up to the settlement's Survival Limit. If you have any +1 Strength tokens, you may spend them all to perform the Surge survival action.",
+    "expansion": "Sunstalker"
   },
   {
     "name": "Suppressed Shadow",
-    "description": "You no longer cast a shadow and you never hesitate, ignore First Strike. On a Perfect Hit, your first wound attempt of the attack automatically succeeds and inflicts a critical wound (if available). If you die during the showdown, place a Shade Minion in the space you occupied."
+    "description": "You no longer cast a shadow and you never hesitate, ignore First Strike. On a Perfect Hit, your first wound attempt of the attack automatically succeeds and inflicts a critical wound (if available). If you die during the showdown, place a Shade Minion in the space you occupied.",
+    "expansion": "Sunstalker"
   },
   {
     "name": "Swordsman's Promise",
-    "description": "At the start of each showdown, gain survival up to your settlements survival limit if you have a sword in your gear grid."
+    "description": "At the start of each showdown, gain survival up to your settlements survival limit if you have a sword in your gear grid.",
+    "expansion": "Core"
+  },
+  {
+    "name": "Synchronized Strike",
+    "description": "[Board Diagram] With flawless coordination, you strike as one. When you’re adjacent to a monster, attack with a melee weapon, and have an [Attack Assist], your attack gains + 1 accuracy, + 1 strength. Limit, once per round.\n[Attack Assist]: A survivor who also has [Synchronized Strike] and is in the right spot. They are standing adjacent to the monster, on its opposite side and parallel to you.",
+    "expansion": "Core"
   },
   {
     "name": "Tenacious",
-    "description": "When your wound attempt on a hit location is a failure, you may put that hit location back on top of the deck instead of the discard pile. Limit, once per round."
+    "description": "When your wound attempt on a hit location is a failure, you may put that hit location back on top of the deck instead of the discard pile. Limit, once per round.",
+    "expansion": "Lion Knight"
   },
   {
     "name": "Thrill Seeker",
-    "description": "Whenever you gain survival during the showdown phase, gain 1 additional survival."
+    "description": "Whenever you gain survival during the showdown phase, gain 1 additional survival.",
+    "expansion": "Core"
   },
   {
     "name": "Timeless Eye",
-    "description": "Your attack roll is a perfect hit on a result of 9 or 10."
+    "description": "Your attack roll is a perfect hit on a result of 9 or 10.",
+    "expansion": "Core"
   },
   {
     "name": "Tough",
-    "description": "When rolling on a severe injury table, unless you roll a 1, add +1 to the result. This does not include brain trauma."
+    "description": "When rolling on a severe injury table, unless you roll a 1, add +1 to the result. This does not include brain trauma.",
+    "expansion": "Core"
   },
   {
     "name": "Trailblazer",
-    "description": "The hunting party may start the hunt phase 1 space closer to the monster. At the start of the showdown, all survivors gain +1 survival and up to +1 insanity (their option)."
+    "description": "The hunting party may start the hunt phase 1 space closer to the monster. At the start of the showdown, all survivors gain +1 survival and up to +1 insanity (their option).",
+    "expansion": "Manhunter"
   },
   {
     "name": "Transcended Masochist",
-    "description": "When you gain a bleeding token, gain +1 survival and +1 insanity, ignore the effects of the Aichmophobia and Apathetic disorders."
-  },
-  {
-    "name": "Trapfinder",
-    "description": "If you draw a Trap hit location, instead of being the first hit location resolved, place half (rounded up) of the hit locations drawn before the Trap, with the rest behind it. (E.g. resolve fully half of the hit locations before resolving the trap.)"
+    "description": "When you gain a bleeding token, gain +1 survival and +1 insanity, ignore the effects of the Aichmophobia and Apathetic disorders.",
+    "expansion": "Manhunter"
   },
   {
     "name": "Trick Attack",
-    "description": "Once per showdown, when you wound a monster from its blind spot, a survivor adjacent to you may gain the priority target token."
+    "description": "Once per showdown, when you wound a monster from its blind spot, a survivor adjacent to you may gain the priority target token.",
+    "expansion": "Sunstalker"
   },
   {
     "name": "True Blade",
-    "description": "All swords in your gear grid gain Deadly. Gain +3 luck when attacking with a sword if you have the Ghostly Beauty and Narcissistic disorders."
+    "description": "All swords in your gear grid gain Deadly. Gain +3 luck when attacking with a sword if you have the Ghostly Beauty and Narcissistic disorders.",
+    "expansion": "Flower Knight"
   },
   {
     "name": "Tumble",
-    "description": "When something would collide with you, roll 1d10. On a result of 6+, you successfully tumble out of harm’s way. Instead, place your survivor standing on the closest free space outside of the collision path."
+    "description": "When something would collide with you, roll 1d10. On a result of 6+, you successfully tumble out of harm’s way. Instead, place your survivor standing on the closest free space outside of the collision path.",
+    "expansion": "Core"
+  },
+  {
+    "name": "Unbreakable",
+    "description": "Once per lantern year, you may ignore one of your severe injury roll results. If you do, gain a random disorder.",
+    "expansion": "Dragon King"
   },
   {
     "name": "Unconscious Fighter",
-    "description": "It takes 7 bleeding tokens to kill you."
+    "description": "It takes 7 bleeding tokens to kill you.",
+    "expansion": "Core"
   },
   {
     "name": "Unrelenting",
-    "description": "If all of your attack rolls in an attack miss, you may spend 1 survival to re-roll all attack rolls."
+    "description": "If all of your attack rolls in an attack miss, you may spend 1 survival to re-roll all attack rolls.",
+    "expansion": "Lion God"
   },
   {
     "name": "Vengeance",
-    "description": "When a survivor dies during the showdown, gain +4 survival and +2 strength token."
+    "description": "When a survivor dies during the showdown, gain +4 survival and +2 strength token.",
+    "expansion": "Spidicules"
   },
   {
     "name": "Wardrobe Expert",
-    "description": "When you suffer a severe injury at a hit location, you may archive a gear worn at that location to ignore it and gain +1 survival."
-  },
-  {
-    "name": "Whipmaster",
-    "description": "If you have a whip and the monster is within 3 squares of you, you may choose to pull them to you. The monster's base will now touch yours. This is a free action once per round."
-  },
-  {
-    "name": "Wielder of Giants",
-    "description": "You may use 2H weapons one-handed. Cumbersome weapons are no longer cumbersome to you."
+    "description": "When you suffer a severe injury at a hit location, you may archive a gear worn at that location to ignore it and gain +1 survival.",
+    "expansion": "Lion Knight"
   },
   {
     "name": "Zero Presence",
-    "description": "Gain +1 strength when attacking a monster from its blind spot. Whenever you attack a monster, you are always considered to be in its blind spot."
+    "description": "Gain +1 strength when attacking a monster from its blind spot. Whenever you attack a monster, you are always considered to be in its blind spot.",
+    "expansion": "Core"
   }
 ]

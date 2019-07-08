@@ -9,16 +9,16 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.LinearLayout
 import ca.meshytama.kotlindeathmonster.R
-import kotlinx.android.synthetic.main.activity_keywords_screen.view.keywordsListView
-import kotlinx.android.synthetic.main.activity_keywords_screen.view.searchBar
+import kotlinx.android.synthetic.main.activity_keywords.view.keywordsListView
+import kotlinx.android.synthetic.main.activity_keywords.view.searchBar
 import kotlinx.android.synthetic.main.keyword_list_entry.view.firstLine
 import kotlinx.android.synthetic.main.keyword_list_entry.view.groupIcon
 import kotlinx.android.synthetic.main.keyword_list_entry.view.secondLine
 
 /**
- * Android implementation of the [KeywordView] interface
+ * Android implementation of the [KeywordView] interface.
  */
-class KeywordViewImpl(context: Context) : LinearLayout(context), KeywordView {
+class AndroidKeywordView(context: Context) : LinearLayout(context), KeywordView {
 
     /**
      * TODO
@@ -30,7 +30,7 @@ class KeywordViewImpl(context: Context) : LinearLayout(context), KeywordView {
     }
 
     init {
-        inflate(context, R.layout.activity_keywords_screen, this)
+        inflate(context, R.layout.activity_keywords, this)
     }
 
     private val keywordsListViewAdapter = object :

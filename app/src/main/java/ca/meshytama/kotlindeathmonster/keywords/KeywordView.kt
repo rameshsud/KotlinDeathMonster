@@ -1,7 +1,7 @@
 package ca.meshytama.kotlindeathmonster.keywords
 
 /**
- * View interface for the keyword-style pages.
+ * View interface for the keyword pages.
  */
 interface KeywordView {
 
