@@ -3,6 +3,7 @@ package ca.meshytama.kotlindeathmonster.model
 import androidx.room.Dao
 import androidx.room.Entity
 import androidx.room.ForeignKey
+import androidx.room.Index
 import androidx.room.Insert
 import androidx.room.PrimaryKey
 import androidx.room.Query
@@ -11,7 +12,8 @@ import androidx.room.Query
         foreignKeys = [ForeignKey(
                 entity = Expansion::class,
                 parentColumns = ["name"],
-                childColumns = ["expansion"])]
+                childColumns = ["expansion"])],
+        indices = [Index("expansion")]
 )
 data class FightingArt(
         @PrimaryKey val name: String,
