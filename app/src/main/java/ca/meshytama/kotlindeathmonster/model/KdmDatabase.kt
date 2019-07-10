@@ -37,14 +37,24 @@ abstract class KdmDatabase : RoomDatabase() {
         }
 
         /**
-         * TODO
+         * Gets the database that was just created.
+         *
+         * If this seems curiously circular, it's because the [onCreate] callback doesn't actually get invoked
+         * with an instance of the database that was just created, so we don't have a readily-accessible way of
+         * interacting with it (unless we wanted to use the provided [SupportSQLiteDatabase] directly, instead
+         * of the nice DAOs that it creates for us? That seems contrary to the whole point of using Room).
+         *
+         * Instead, we rely on whoever is creating the database to provide a method to get it back again later, and
+         * assume that the Room module will ensure that the database is actually created before calling [onCreate].
+         *
+         * This is less than ideal. It would be much better if [onCreate] had this as a parameter from the get-go.
          */
         abstract fun getDatabase(): KdmDatabase
 
         override fun onCreate(db: SupportSQLiteDatabase) {
             super.onCreate(db)
 
-            Log.i ( TAG, "Pre-populating DB")
+            Log.i(TAG, "Pre-populating DB")
 
             // TODO use a proper scope?
             GlobalScope.launch {
@@ -55,13 +65,13 @@ abstract class KdmDatabase : RoomDatabase() {
                     addGlossary(glossaryDao())
                 }
 
-                Log.i ( TAG, "Done pre-populating DB")
+                Log.i(TAG, "Done pre-populating DB")
             }
         }
 
         private suspend fun addExpansions(dao: ExpansionsDao) {
 
-            Log.i ( TAG, "Adding expansions")
+            Log.i(TAG, "Adding expansions")
 
             val json = getJsonArrayFromResource(R.raw.expansions)
 
@@ -74,7 +84,7 @@ abstract class KdmDatabase : RoomDatabase() {
 
         private suspend fun addDisorders(dao: DisordersDao) {
 
-            Log.i ( TAG, "Adding disorders")
+            Log.i(TAG, "Adding disorders")
 
             val json = getJsonArrayFromResource(R.raw.disorders)
 
@@ -90,7 +100,7 @@ abstract class KdmDatabase : RoomDatabase() {
 
         private suspend fun addFightingArts(dao: FightingArtsDao) {
 
-            Log.i ( TAG, "Adding fighting arts")
+            Log.i(TAG, "Adding fighting arts")
 
             val json = getJsonArrayFromResource(R.raw.fighting_arts)
 
@@ -106,7 +116,7 @@ abstract class KdmDatabase : RoomDatabase() {
 
         private suspend fun addGlossary(dao: GlossaryDao) {
 
-            Log.i ( TAG, "Adding glossary")
+            Log.i(TAG, "Adding glossary")
 
             val json = getJsonArrayFromResource(R.raw.glossary)
 

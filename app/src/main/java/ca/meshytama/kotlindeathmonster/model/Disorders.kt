@@ -24,9 +24,12 @@ interface DisordersDao {
     @Query("SELECT * from disorders")
     suspend fun getAll(): List<Disorder>
 
+    @Query("SELECT * from disorders where name like '%' || :name || '%'")
+    suspend fun getAllMatchingName(name: String): List<Disorder>
+
     @Query("SELECT * from disorders ORDER BY RANDOM() LIMIT 1")
     suspend fun getRandom(): Disorder
 
     @Insert
-    suspend fun insert(disorder:Disorder)
+    suspend fun insert(disorder: Disorder)
 }

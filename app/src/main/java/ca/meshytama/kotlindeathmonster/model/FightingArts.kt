@@ -24,6 +24,9 @@ interface FightingArtsDao {
     @Query("SELECT * from fighting_arts")
     suspend fun getAll(): List<FightingArt>
 
+    @Query("SELECT * from fighting_arts where name like '%' || :name || '%'")
+    suspend fun getAllMatchingName(name: String): List<FightingArt>
+
     @Query("SELECT * from fighting_arts ORDER BY RANDOM() LIMIT 1")
     suspend fun getRandom(): FightingArt
 

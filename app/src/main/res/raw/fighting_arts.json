@@ -11,7 +11,7 @@
   },
   {
     "name": "Acrobatics",
-    "description": "When you are adjacent to the monster, you may spend [M] to place your survivor on any other space adjacent to the monster.",
+    "description": "When you are adjacent to the monster, you may spend your movement to place your survivor on any other space adjacent to the monster.",
     "expansion": "Dragon King"
   },
   {
@@ -46,7 +46,7 @@
   },
   {
     "name": "Black Guard Style",
-    "description": "Swords in your gear grid gain [Block 1].\nWhen you block a hit with a sword, you next attack that round with a sword gains + 2 accuracy, + 2 strength, + 2 speed. Limit, once per round.\nDuring the settlement phase, you may spend [star] to train a survivor. They gain the Black Guard Style secret fighting art. You lose it if you suffer the broken arm severe injury.",
+    "description": "Swords in your gear grid gain [Block 1].\nWhen you block a hit with a sword, your next attack that round with a sword gains + 2 accuracy, + 2 strength, + 2 speed. Limit, once per round.\nDuring the settlement phase, you may spend an endeavour to train a survivor. They gain the Black Guard Style secret fighting art. You lose it if you suffer the broken arm severe injury.",
     "expansion": "Promo"
   },
   {

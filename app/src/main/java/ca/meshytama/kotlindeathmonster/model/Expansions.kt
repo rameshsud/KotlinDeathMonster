@@ -17,5 +17,5 @@ interface ExpansionsDao {
     suspend fun getAll(): List<Expansion>
 
     @Insert
-    suspend fun insert(expansion:Expansion)
+    suspend fun insert(expansion: Expansion)
 }

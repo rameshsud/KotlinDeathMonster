@@ -6,7 +6,7 @@ import androidx.room.Insert
 import androidx.room.PrimaryKey
 import androidx.room.Query
 
-@Entity(tableName="glossary")
+@Entity(tableName = "glossary")
 data class GlossaryEntry(
         @PrimaryKey val name: String,
         val description: String
@@ -16,6 +16,9 @@ data class GlossaryEntry(
 interface GlossaryDao {
     @Query("SELECT * from glossary")
     suspend fun getAll(): List<GlossaryEntry>
+
+    @Query("SELECT * from glossary where name like '%' || :name || '%'")
+    suspend fun getAllMatchingName(name: String): List<GlossaryEntry>
 
     @Insert
     suspend fun insert(glossaryEntry: GlossaryEntry)
