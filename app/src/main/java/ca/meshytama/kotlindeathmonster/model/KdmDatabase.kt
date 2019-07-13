@@ -6,13 +6,14 @@ import androidx.annotation.RawRes
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import androidx.room.migration.Migration
 import androidx.sqlite.db.SupportSQLiteDatabase
 import ca.meshytama.kotlindeathmonster.R
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import org.json.JSONArray
 
-@Database(entities = [Expansion::class, Disorder::class, FightingArt::class, GlossaryEntry::class], version = 1)
+@Database(entities = [Expansion::class, Disorder::class, FightingArt::class, GlossaryEntry::class], version = 2)
 abstract class KdmDatabase : RoomDatabase() {
     abstract fun expansionsDao(): ExpansionsDao
     abstract fun disordersDao(): DisordersDao
@@ -26,7 +27,7 @@ abstract class KdmDatabase : RoomDatabase() {
                     context.applicationContext,
                     KdmDatabase::class.java,
                     name.toString()
-            ).addCallback(initializer).build()
+            ).addCallback(initializer).addMigrations(MIGRATION_1_2).build()
         }
     }
 
@@ -77,7 +78,7 @@ abstract class KdmDatabase : RoomDatabase() {
 
             for (i in 0 until json.length()) {
                 with(json.getJSONObject(i)) {
-                    dao.insert(Expansion(name = getString("name")))
+                    dao.insert(Expansion(name = getString("name"), isIncluded = true))
                 }
             }
         }
@@ -131,6 +132,14 @@ abstract class KdmDatabase : RoomDatabase() {
 
         private fun getJsonArrayFromResource(@RawRes keywordsFile: Int): JSONArray {
             return JSONArray(context.resources.openRawResource(keywordsFile).bufferedReader().use { it.readText() })
+        }
+    }
+
+    companion object {
+        private val MIGRATION_1_2 = object : Migration(1,2){
+            override fun migrate(database: SupportSQLiteDatabase) {
+                database.execSQL("ALTER TABLE expansions ADD COLUMN isIncluded INTEGER NOT NULL DEFAULT 1")
+            }
         }
     }
 }
