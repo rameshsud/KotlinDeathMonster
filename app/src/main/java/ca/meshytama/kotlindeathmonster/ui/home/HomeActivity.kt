@@ -5,9 +5,9 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import ca.meshytama.kotlindeathmonster.R
 import ca.meshytama.kotlindeathmonster.ui.expansions.ExpansionsActivity
-import ca.meshytama.kotlindeathmonster.ui.common.keywords.DisordersActivity
-import ca.meshytama.kotlindeathmonster.ui.common.keywords.FightingArtsActivity
-import ca.meshytama.kotlindeathmonster.ui.common.keywords.GlossaryActivity
+import ca.meshytama.kotlindeathmonster.ui.disorders.DisordersActivity
+import ca.meshytama.kotlindeathmonster.ui.fightingarts.FightingArtsActivity
+import ca.meshytama.kotlindeathmonster.ui.glossary.GlossaryActivity
 import kotlinx.android.synthetic.main.activity_home.disordersButton
 import kotlinx.android.synthetic.main.activity_home.expansionsButton
 import kotlinx.android.synthetic.main.activity_home.fightingArtsButton

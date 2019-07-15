@@ -1,11 +1,5 @@
 package ca.meshytama.kotlindeathmonster.ui.common.keywords
 
-import ca.meshytama.kotlindeathmonster.model.Disorder
-import ca.meshytama.kotlindeathmonster.model.DisordersDao
-import ca.meshytama.kotlindeathmonster.model.FightingArt
-import ca.meshytama.kotlindeathmonster.model.FightingArtsDao
-import ca.meshytama.kotlindeathmonster.model.GlossaryDao
-import ca.meshytama.kotlindeathmonster.model.GlossaryEntry
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.MainScope
@@ -99,31 +93,4 @@ abstract class BaseKeywordPresenter<T>(private val view: KeywordView) :
             else -> '#'
         }
     }
-}
-
-/**
- * Presenter implementation for the Disorders page.
- */
-class DisordersPresenter(private val dao: DisordersDao, view: KeywordView) : BaseKeywordPresenter<Disorder>(view) {
-    override suspend fun getAllContainingName(name: CharSequence) = dao.getIncludedMatchingName(name.toString())
-    override suspend fun getAll() = dao.getIncluded()
-    override fun toKeyword(input: Disorder) = Keyword(input.name, input.description)
-}
-
-/**
- * Presenter implementation for the Fighting Arts page.
- */
-class FightingArtsPresenter(private val dao: FightingArtsDao, view: KeywordView) : BaseKeywordPresenter<FightingArt>(view) {
-    override suspend fun getAllContainingName(name: CharSequence) = dao.getIncludedMatchingName(name.toString())
-    override suspend fun getAll() = dao.getIncluded()
-    override fun toKeyword(input: FightingArt) = Keyword(input.name, input.description)
-}
-
-/**
- * Presenter implementation for the Glossary page.
- */
-class GlossaryPresenter(private val dao: GlossaryDao, view: KeywordView) : BaseKeywordPresenter<GlossaryEntry>(view) {
-    override suspend fun getAllContainingName(name: CharSequence) = dao.getAllMatchingName(name.toString())
-    override suspend fun getAll() = dao.getAll()
-    override fun toKeyword(input: GlossaryEntry) = Keyword(input.name, input.description)
 }

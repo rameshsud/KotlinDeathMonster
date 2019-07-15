@@ -32,30 +32,3 @@ abstract class KeywordActivity : AppCompatActivity() {
 
     abstract fun createPresenter(database: KdmDatabase, view: KeywordView): KeywordPresenter
 }
-
-/**
- * The activity that shows the cards in the Fighting Arts deck that are currently included in the campaign.
- */
-class FightingArtsActivity : KeywordActivity() {
-    override fun createPresenter(database: KdmDatabase, view: KeywordView): KeywordPresenter {
-        return FightingArtsPresenter(database.fightingArtsDao(), view)
-    }
-}
-
-/**
- * The activity that shows the cards in the Disorders deck that are currently included in the campaign.
- */
-class DisordersActivity : KeywordActivity() {
-    override fun createPresenter(database: KdmDatabase, view: KeywordView): KeywordPresenter {
-        return DisordersPresenter(database.disordersDao(), view)
-    }
-}
-
-/**
- * The activity that shows the glossary.
- */
-class GlossaryActivity : KeywordActivity() {
-    override fun createPresenter(database: KdmDatabase, view: KeywordView): KeywordPresenter {
-        return GlossaryPresenter(database.glossaryDao(), view)
-    }
-}
