@@ -1,4 +1,4 @@
-package ca.meshytama.kotlindeathmonster.expansions
+package ca.meshytama.kotlindeathmonster.ui.expansions
 
 import android.content.Context
 import android.view.LayoutInflater

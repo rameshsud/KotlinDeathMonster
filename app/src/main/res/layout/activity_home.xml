@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="ca.meshytama.kotlindeathmonster.home.HomeActivity">
+    tools:context=".ui.home.HomeActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -24,7 +24,7 @@
         android:layout_height="match_parent"
         android:layout_margin="8dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        tools:context="ca.meshytama.kotlindeathmonster.home.HomeActivity">
+        tools:context=".ui.home.HomeActivity">
 
         <Button
             android:id="@+id/fightingArtsButton"

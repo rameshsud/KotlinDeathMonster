@@ -1,4 +1,4 @@
-package ca.meshytama.kotlindeathmonster.expansions
+package ca.meshytama.kotlindeathmonster.ui.expansions
 
 import android.os.Bundle
 import android.view.View

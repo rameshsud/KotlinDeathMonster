@@ -1,4 +1,4 @@
-package ca.meshytama.kotlindeathmonster.keywords
+package ca.meshytama.kotlindeathmonster.ui.common.keywords
 
 /**
  * A keyword.

@@ -1,13 +1,13 @@
-package ca.meshytama.kotlindeathmonster.home
+package ca.meshytama.kotlindeathmonster.ui.home
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import ca.meshytama.kotlindeathmonster.R
-import ca.meshytama.kotlindeathmonster.expansions.ExpansionsActivity
-import ca.meshytama.kotlindeathmonster.keywords.DisordersActivity
-import ca.meshytama.kotlindeathmonster.keywords.FightingArtsActivity
-import ca.meshytama.kotlindeathmonster.keywords.GlossaryActivity
+import ca.meshytama.kotlindeathmonster.ui.expansions.ExpansionsActivity
+import ca.meshytama.kotlindeathmonster.ui.common.keywords.DisordersActivity
+import ca.meshytama.kotlindeathmonster.ui.common.keywords.FightingArtsActivity
+import ca.meshytama.kotlindeathmonster.ui.common.keywords.GlossaryActivity
 import kotlinx.android.synthetic.main.activity_home.disordersButton
 import kotlinx.android.synthetic.main.activity_home.expansionsButton
 import kotlinx.android.synthetic.main.activity_home.fightingArtsButton

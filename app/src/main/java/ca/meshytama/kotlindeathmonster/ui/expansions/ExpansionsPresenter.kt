@@ -1,4 +1,4 @@
-package ca.meshytama.kotlindeathmonster.expansions
+package ca.meshytama.kotlindeathmonster.ui.expansions
 
 import ca.meshytama.kotlindeathmonster.model.Expansion
 import ca.meshytama.kotlindeathmonster.model.ExpansionsDao

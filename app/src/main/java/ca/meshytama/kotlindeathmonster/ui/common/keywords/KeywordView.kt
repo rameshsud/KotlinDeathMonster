@@ -1,4 +1,4 @@
-package ca.meshytama.kotlindeathmonster.keywords
+package ca.meshytama.kotlindeathmonster.ui.common.keywords
 
 import android.content.Context
 import android.text.Editable
