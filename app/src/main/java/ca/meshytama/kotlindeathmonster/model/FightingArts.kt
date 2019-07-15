@@ -23,16 +23,16 @@ data class FightingArt(
 
 @Dao
 interface FightingArtsDao {
-    @Query("SELECT * from fighting_arts")
+    @Query("SELECT fighting_arts.* from fighting_arts join expansions on fighting_arts.expansion = expansions.name where isIncluded")
     suspend fun getAll(): List<FightingArt>
 
-    @Query("SELECT * from fighting_arts where name like '%' || :name || '%'")
+    @Query("SELECT fighting_arts.* from fighting_arts join expansions on fighting_arts.expansion = expansions.name where isIncluded AND fighting_arts.name like '%' || :name || '%'")
     suspend fun getAllMatchingName(name: String): List<FightingArt>
 
-    @Query("SELECT * from fighting_arts ORDER BY RANDOM() LIMIT 1")
+    @Query("SELECT fighting_arts.* from fighting_arts join expansions on fighting_arts.expansion = expansions.name where isIncluded ORDER BY RANDOM() LIMIT 1")
     suspend fun getRandom(): FightingArt
 
-    @Query("SELECT * from fighting_arts ORDER BY RANDOM() LIMIT 3")
+    @Query("SELECT fighting_arts.* from fighting_arts join expansions on fighting_arts.expansion = expansions.name where isIncluded ORDER BY RANDOM() LIMIT 3")
     suspend fun get3Random(): List<FightingArt>
 
     @Insert

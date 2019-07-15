@@ -48,6 +48,14 @@
             android:layout_height="wrap_content"
             android:text="Glossary"
             android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/expansionsButton" />
+
+        <Button
+            android:id="@+id/expansionsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Expansions"
+            android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -38,7 +38,7 @@ interface KeywordView {
  */
 class AndroidKeywordView(context: Context) : LinearLayout(context), KeywordView {
 
-    var presenter: KeywordPresenter? = null
+    private var presenter: KeywordPresenter? = null
 
     override fun attachPresenter(presenter: KeywordPresenter) {
         this.presenter = presenter

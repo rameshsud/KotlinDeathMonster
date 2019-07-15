@@ -4,10 +4,12 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import ca.meshytama.kotlindeathmonster.R
+import ca.meshytama.kotlindeathmonster.expansions.ExpansionsActivity
 import ca.meshytama.kotlindeathmonster.keywords.DisordersActivity
 import ca.meshytama.kotlindeathmonster.keywords.FightingArtsActivity
 import ca.meshytama.kotlindeathmonster.keywords.GlossaryActivity
 import kotlinx.android.synthetic.main.activity_home.disordersButton
+import kotlinx.android.synthetic.main.activity_home.expansionsButton
 import kotlinx.android.synthetic.main.activity_home.fightingArtsButton
 import kotlinx.android.synthetic.main.activity_home.glossaryButton
 import kotlinx.android.synthetic.main.activity_home.toolbar
@@ -37,6 +39,10 @@ class HomeActivity : AppCompatActivity() {
 
         glossaryButton.setOnClickListener {
             startActivity(Intent(this, GlossaryActivity::class.java))
+        }
+
+        expansionsButton.setOnClickListener {
+            startActivity(Intent(this, ExpansionsActivity::class.java))
         }
     }
 
