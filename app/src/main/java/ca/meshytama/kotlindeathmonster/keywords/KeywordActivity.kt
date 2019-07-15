@@ -34,7 +34,7 @@ abstract class KeywordActivity : AppCompatActivity() {
 }
 
 /**
- * The activity that shows the Fighting Arts deck.
+ * The activity that shows the cards in the Fighting Arts deck that are currently included in the campaign.
  */
 class FightingArtsActivity : KeywordActivity() {
     override fun createPresenter(database: KdmDatabase, view: KeywordView): KeywordPresenter {
@@ -43,7 +43,7 @@ class FightingArtsActivity : KeywordActivity() {
 }
 
 /**
- * The activity that shows the Disorder deck.
+ * The activity that shows the cards in the Disorders deck that are currently included in the campaign.
  */
 class DisordersActivity : KeywordActivity() {
     override fun createPresenter(database: KdmDatabase, view: KeywordView): KeywordPresenter {

@@ -105,8 +105,8 @@ abstract class BaseKeywordPresenter<T>(private val view: KeywordView) :
  * Presenter implementation for the Disorders page.
  */
 class DisordersPresenter(private val dao: DisordersDao, view: KeywordView) : BaseKeywordPresenter<Disorder>(view) {
-    override suspend fun getAllContainingName(name: CharSequence) = dao.getAllMatchingName(name.toString())
-    override suspend fun getAll() = dao.getAll()
+    override suspend fun getAllContainingName(name: CharSequence) = dao.getIncludedMatchingName(name.toString())
+    override suspend fun getAll() = dao.getIncluded()
     override fun toKeyword(input: Disorder) = Keyword(input.name, input.description)
 }
 
@@ -114,8 +114,8 @@ class DisordersPresenter(private val dao: DisordersDao, view: KeywordView) : Bas
  * Presenter implementation for the Fighting Arts page.
  */
 class FightingArtsPresenter(private val dao: FightingArtsDao, view: KeywordView) : BaseKeywordPresenter<FightingArt>(view) {
-    override suspend fun getAllContainingName(name: CharSequence) = dao.getAllMatchingName(name.toString())
-    override suspend fun getAll() = dao.getAll()
+    override suspend fun getAllContainingName(name: CharSequence) = dao.getIncludedMatchingName(name.toString())
+    override suspend fun getAll() = dao.getIncluded()
     override fun toKeyword(input: FightingArt) = Keyword(input.name, input.description)
 }
 

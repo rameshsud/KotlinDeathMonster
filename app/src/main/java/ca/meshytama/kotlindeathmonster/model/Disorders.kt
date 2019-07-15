@@ -24,13 +24,13 @@ data class Disorder(
 @Dao
 interface DisordersDao {
     @Query("SELECT disorders.* from disorders join expansions on disorders.expansion = expansions.name where isIncluded")
-    suspend fun getAll(): List<Disorder>
+    suspend fun getIncluded(): List<Disorder>
 
     @Query("SELECT disorders.* from disorders join expansions on disorders.expansion = expansions.name where isIncluded AND disorders.name like '%' || :name || '%'")
-    suspend fun getAllMatchingName(name: String): List<Disorder>
+    suspend fun getIncludedMatchingName(name: String): List<Disorder>
 
     @Query("SELECT disorders.* from disorders join expansions on disorders.expansion = expansions.name where isIncluded ORDER BY RANDOM() LIMIT 1")
-    suspend fun getRandom(): Disorder
+    suspend fun getRandomIncluded(): Disorder
 
     @Insert
     suspend fun insert(disorder: Disorder)
