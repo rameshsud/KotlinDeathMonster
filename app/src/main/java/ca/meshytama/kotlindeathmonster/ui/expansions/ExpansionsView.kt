@@ -47,8 +47,10 @@ class AndroidExpansionsView(context: Context) : LinearLayout(context), Expansion
                     layout.checkbox_list_entry,
                     ArrayList<Expansion>()
             ) {
+        val inflater = LayoutInflater.from(context)
+
         override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View? {
-            val myView = convertView ?: LayoutInflater.from(context).inflate(
+            val myView = convertView ?: inflater.inflate(
                     layout.checkbox_list_entry,
                     parent,
                     false

@@ -54,8 +54,10 @@ class AndroidKeywordView(context: Context) : LinearLayout(context), KeywordView 
                     layout.keyword_list_entry,
                     ArrayList<DisplayableKeyword>()
             ) {
+        val inflater = LayoutInflater.from(context)
+
         override fun getView(position: Int, convertView: View?, parent: ViewGroup?): View? {
-            val myView = convertView ?: LayoutInflater.from(context).inflate(
+            val myView = convertView ?: inflater.inflate(
                     layout.keyword_list_entry,
                     parent,
                     false
