@@ -2,16 +2,22 @@
   "formatVersion": 1,
   "database": {
     "version": 1,
-    "identityHash": "723feee1f5b9c83ff4280cefe823fcb9",
+    "identityHash": "8be2d2ff8c19a440a943750b4b200df4",
     "entities": [
       {
         "tableName": "expansions",
-        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`name` TEXT NOT NULL, PRIMARY KEY(`name`))",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`name` TEXT NOT NULL, `isIncluded` INTEGER NOT NULL, PRIMARY KEY(`name`))",
         "fields": [
           {
             "fieldPath": "name",
             "columnName": "name",
             "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isIncluded",
+            "columnName": "isIncluded",
+            "affinity": "INTEGER",
             "notNull": true
           }
         ],
@@ -60,7 +66,7 @@
             "columnNames": [
               "expansion"
             ],
-            "createSql": "CREATE  INDEX `index_disorders_expansion` ON `${TABLE_NAME}` (`expansion`)"
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_disorders_expansion` ON `${TABLE_NAME}` (`expansion`)"
           }
         ],
         "foreignKeys": [
@@ -79,7 +85,7 @@
       },
       {
         "tableName": "fighting_arts",
-        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`name` TEXT NOT NULL, `description` TEXT NOT NULL, `expansion` TEXT NOT NULL, PRIMARY KEY(`name`), FOREIGN KEY(`expansion`) REFERENCES `expansions`(`name`) ON UPDATE NO ACTION ON DELETE NO ACTION )",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`name` TEXT NOT NULL, `description` TEXT NOT NULL, `expansion` TEXT NOT NULL, `type` TEXT NOT NULL, PRIMARY KEY(`name`), FOREIGN KEY(`expansion`) REFERENCES `expansions`(`name`) ON UPDATE NO ACTION ON DELETE NO ACTION , FOREIGN KEY(`type`) REFERENCES `fighting_art_types`(`name`) ON UPDATE NO ACTION ON DELETE NO ACTION )",
         "fields": [
           {
             "fieldPath": "name",
@@ -98,6 +104,12 @@
             "columnName": "expansion",
             "affinity": "TEXT",
             "notNull": true
+          },
+          {
+            "fieldPath": "type",
+            "columnName": "type",
+            "affinity": "TEXT",
+            "notNull": true
           }
         ],
         "primaryKey": {
@@ -113,7 +125,15 @@
             "columnNames": [
               "expansion"
             ],
-            "createSql": "CREATE  INDEX `index_fighting_arts_expansion` ON `${TABLE_NAME}` (`expansion`)"
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_fighting_arts_expansion` ON `${TABLE_NAME}` (`expansion`)"
+          },
+          {
+            "name": "index_fighting_arts_type",
+            "unique": false,
+            "columnNames": [
+              "type"
+            ],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_fighting_arts_type` ON `${TABLE_NAME}` (`type`)"
           }
         ],
         "foreignKeys": [
@@ -127,8 +147,39 @@
             "referencedColumns": [
               "name"
             ]
+          },
+          {
+            "table": "fighting_art_types",
+            "onDelete": "NO ACTION",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "type"
+            ],
+            "referencedColumns": [
+              "name"
+            ]
           }
         ]
+      },
+      {
+        "tableName": "fighting_art_types",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`name` TEXT NOT NULL, PRIMARY KEY(`name`))",
+        "fields": [
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "name"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
       },
       {
         "tableName": "glossary",
@@ -160,7 +211,7 @@
     "views": [],
     "setupQueries": [
       "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
-      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '723feee1f5b9c83ff4280cefe823fcb9')"
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '8be2d2ff8c19a440a943750b4b200df4')"
     ]
   }
 }

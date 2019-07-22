@@ -6,14 +6,13 @@ import androidx.annotation.RawRes
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import androidx.room.migration.Migration
 import androidx.sqlite.db.SupportSQLiteDatabase
 import ca.meshytama.kotlindeathmonster.R
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import org.json.JSONArray
 
-@Database(entities = [Expansion::class, Disorder::class, FightingArt::class, GlossaryEntry::class], version = 2)
+@Database(entities = [Expansion::class, Disorder::class, FightingArt::class, FightingArtType::class, GlossaryEntry::class], version = 1)
 abstract class KdmDatabase : RoomDatabase() {
     abstract fun expansionsDao(): ExpansionsDao
     abstract fun disordersDao(): DisordersDao
@@ -27,7 +26,7 @@ abstract class KdmDatabase : RoomDatabase() {
                     context.applicationContext,
                     KdmDatabase::class.java,
                     name.toString()
-            ).addCallback(initializer).addMigrations(MIGRATION_1_2).build()
+            ).addCallback(initializer).build()
         }
     }
 
@@ -103,14 +102,27 @@ abstract class KdmDatabase : RoomDatabase() {
 
             Log.i(TAG, "Adding fighting arts")
 
-            val json = getJsonArrayFromResource(R.raw.fighting_arts)
+            run {
+                val json = getJsonArrayFromResource(R.raw.fighting_art_types)
 
-            for (i in 0 until json.length()) {
-                with(json.getJSONObject(i)) {
-                    dao.insert(FightingArt(
-                            name = getString("name"),
-                            description = getString("description"),
-                            expansion = getString("expansion")))
+                for (i in 0 until json.length()) {
+                    with(json.getJSONObject(i)) {
+                        dao.insert(FightingArtType(name = getString("name")))
+                    }
+                }
+            }
+
+            run {
+                val json = getJsonArrayFromResource(R.raw.fighting_arts)
+
+                for (i in 0 until json.length()) {
+                    with(json.getJSONObject(i)) {
+                        dao.insert(FightingArt(
+                                name = getString("name"),
+                                description = getString("description"),
+                                expansion = getString("expansion"),
+                                type = getString("type")))
+                    }
                 }
             }
         }
@@ -132,14 +144,6 @@ abstract class KdmDatabase : RoomDatabase() {
 
         private fun getJsonArrayFromResource(@RawRes keywordsFile: Int): JSONArray {
             return JSONArray(context.resources.openRawResource(keywordsFile).bufferedReader().use { it.readText() })
-        }
-    }
-
-    companion object {
-        private val MIGRATION_1_2 = object : Migration(1, 2) {
-            override fun migrate(database: SupportSQLiteDatabase) {
-                database.execSQL("ALTER TABLE expansions ADD COLUMN isIncluded INTEGER NOT NULL DEFAULT 1")
-            }
         }
     }
 }
